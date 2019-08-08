@@ -148,11 +148,13 @@ p.text-right {
   .small-float-center {
     margin: 0 auto !important;
     float: none !important;
+    text-align: center !important; }
+  .small-text-center {
     text-align: center !important; } }
 
-img.float-right {
-  float: right;
-  text-align: right; }
+img.float-left {
+  float: left;
+  text-align: left; }
 
 img.float-center {
   margin: 0 auto;
@@ -165,6 +167,13 @@ table.float-center {
   Margin: 0 auto;
   float: none;
   text-align: center; }
+
+@media only screen and (max-width: 620px) {
+  table.body table.container .show-for-large {
+    display: none !important;
+    width: 0;
+    mso-hide: all;
+    overflow: hidden; } }
 
 body,
 table.body,
